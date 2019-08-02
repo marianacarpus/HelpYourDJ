@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/images">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="5dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/imagepub"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grd2">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name pub"
+                    android:textColor="#ffffff"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="0.0"
+                    android:shadowDy="0.0"
+                    android:shadowRadius="15"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@android:color/white"
+                    android:id="@+id/txtNamePub"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adress"
+                    android:gravity="bottom|left"
+                    android:textColor="#ffffff"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="0.0"
+                    android:shadowDy="0.0"
+                    android:shadowRadius="15"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@android:color/white"
+                    android:textStyle="italic"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/txtAdressPub"/>
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/btnmusiclist"
+                    android:layout_width="match_parent"
+                    app:nb_fontIcon="\uf164"
+                    app:nb_iconColor="@android:color/white"
+                    app:nb_textColor="@android:color/white"
+                    app:nb_backgroundColor="@android:color/background_dark"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginHorizontal="70dp"
+                    app:nb_textAllCaps="false"
+                    app:nb_iconPosition="left"
+                    app:nb_textStyle="bold"
+                    app:nb_textSize="13dp"
+                    app:nb_radius="15dp"
+                    android:tag="none"
+                    app:nb_text="Vote music"
+                    app:nb_focusColor="@android:color/white"
+                    android:layout_height="30dp"></com.ornach.nobobutton.NoboButton>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Website: "
+                    android:gravity="bottom|left"
+                    android:textColor="#ffffff"
+                    android:textStyle="italic"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="0.0"
+                    android:shadowDy="0.0"
+                    android:shadowRadius="15"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@android:color/white"
+                    android:layout_margin="6dp"
+                    android:textSize="10sp"
+                    android:src="@drawable/placeholder"
+                    android:id="@+id/txtwebsitePub"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
